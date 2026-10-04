@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="132" height="56" viewBox="0 0 132 56">
+  <defs>
+    <clipPath id="a"><circle cx="28" cy="28" r="24"/></clipPath>
+    <clipPath id="b"><circle cx="66" cy="28" r="24"/></clipPath>
+    <clipPath id="c"><circle cx="104" cy="28" r="24"/></clipPath>
+  </defs>
+  <circle cx="28" cy="28" r="26" fill="#f26a1b"/>
+  <circle cx="28" cy="28" r="24" fill="#ffd9bd"/>
+  <g clip-path="url(#a)" fill="#d9560f"><circle cx="28" cy="22" r="8"/><ellipse cx="28" cy="46" rx="15" ry="13"/></g>
+  <circle cx="66" cy="28" r="26" fill="#f26a1b"/>
+  <circle cx="66" cy="28" r="24" fill="#ffe6d1"/>
+  <g clip-path="url(#b)" fill="#f26a1b"><circle cx="66" cy="22" r="8"/><ellipse cx="66" cy="46" rx="15" ry="13"/></g>
+  <circle cx="104" cy="28" r="26" fill="#f26a1b"/>
+  <circle cx="104" cy="28" r="24" fill="#fff"/>
+  <g clip-path="url(#c)" fill="#b34a0c"><circle cx="104" cy="22" r="8"/><ellipse cx="104" cy="46" rx="15" ry="13"/></g>
+</svg>

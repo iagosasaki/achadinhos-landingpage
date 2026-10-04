@@ -17,6 +17,7 @@ body {
     color: #3a1a0f;
     background: #fff5ef;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 }
 
 img {
@@ -69,7 +70,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: center;
+    flex-wrap: wrap;
     gap: 10px;
     padding: 9px 16px;
     background: #14110f url(assets/background_cinza.png) center / 300px auto repeat;
@@ -97,4 +98,465 @@ p {
     font-family: 'JetBrains Mono', monospace;
     font-weight: 700;
     color: #ff4a4f;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 18px 20px;
+    color: #fff;
+}
+
+.header img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+.brand {
+    margin-right: auto;
+}
+
+.brand p {
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.header .btn {
+    background: #fff;
+    color: #f26a1b;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 16px;
+    border-radius: 8px;
+}
+
+.header .btn:hover {
+    background: #d9560f;
+    color: #fff;
+}
+
+.hero {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+    gap: 48px;
+    align-items: center;
+    max-width: 1120px;
+    margin: auto;
+    padding: 28px 20px 72px;
+    color: #fff;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -80px;
+    bottom: 0;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    background: linear-gradient(180deg, #f7812a 0%, #f26a1b 100%);
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+.hero-text h1 {
+    font-size: clamp(34px, 5.4vw, 56px);
+    font-weight: 800;
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+}
+
+.hero-text>p:not(.badge) {
+    max-width: 30em;
+    font-size: 18px;
+    line-height: 1.5;
+    opacity: 0.95;
+}
+
+.badge {
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #fff;
+    color: #d9560f;
+    font-weight: 700;
+    font-size: 14px;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+    background: #d9560f;
+    color: #fff;
+}
+
+.btn-lg {
+    padding: 18px 28px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 800;
+    box-shadow: 0 10px 24px rgba(90, 40, 0, 0.25);
+}
+
+.btn-lg:hover {
+    transform: translateY(-1px);
+}
+
+.social-proof {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.social-proof img {
+    width: 66px;
+    height: 28px;
+}
+
+.chat-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 420px;
+    justify-self: center;
+    padding: 16px;
+    background: #fff;
+    color: #3a1a0f;
+    border-radius: 20px;
+    box-shadow: 0 24px 60px rgba(90, 40, 0, 0.3);
+}
+
+.chat-header {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    column-gap: 10px;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #fbd9cb;
+}
+
+.chat-header img {
+    grid-row: span 2;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chat-header h2 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.chat-header p {
+    font-size: 12px;
+    color: #9a6a58;
+}
+
+.chat-card hr {
+    display: none;
+}
+
+.chat-product {
+    display: grid;
+    grid-template-columns: 84px 1fr;
+    column-gap: 12px;
+    align-items: center;
+    padding: 12px;
+    background: #fbf3ef;
+    border-radius: 12px;
+}
+
+.chat-product img {
+    grid-row: span 4;
+    width: 84px;
+    height: 84px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.chat-product h3 {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.chat-product .price {
+    display: inline;
+    color: #f26a1b;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.chat-product s {
+    font-size: 12px;
+    color: #9a6a58;
+}
+
+.chat-product .shipping {
+    font-size: 12px;
+    font-weight: 700;
+    color: #26a06b;
+}
+
+.chat-coupon {
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.chat-card time {
+    align-self: flex-end;
+    font-size: 11px;
+    color: #9a6a58;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    width: calc(100% - 40px);
+    max-width: 1080px;
+    margin: 0 auto -54px;
+    transform: translateY(-50%);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background: #fbd9cb;
+    border: 2px solid #fbd9cb;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(58, 26, 15, 0.08);
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 22px;
+    background: #fff;
+}
+
+.stat strong {
+    font-size: 26px;
+    font-weight: 800;
+    color: #f26a1b;
+}
+
+.stat p {
+    font-size: 14px;
+    color: #7a4a3a;
+}
+
+.deals {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 72px 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.eyebrow {
+    color: #f26a1b;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.section-head h2 {
+    font-size: clamp(26px, 3.6vw, 36px);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+}
+
+.section-head p {
+    font-size: 14px;
+    color: #7a4a3a;
+}
+
+.deals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 170px), 1fr));
+    gap: 14px;
+}
+
+.deal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-bottom: 12px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #fbd9cb;
+    border-radius: 12px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.deal:hover {
+    border-color: #f26a1b;
+    box-shadow: 0 6px 20px rgba(242, 106, 27, 0.12);
+}
+
+.deal img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    background: #f5ebe6;
+}
+
+.discount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 6px 8px;
+    background: #ffd23f;
+    color: #b34a0c;
+    font-size: 12px;
+    font-weight: 800;
+    border-bottom-left-radius: 8px;
+}
+
+.deal h3,
+.deal-price,
+.deal progress,
+.deal .sold {
+    margin-inline: 12px;
+}
+
+.deal h3 {
+    min-height: 2.7em;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.35;
+}
+
+.deal-price {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.deal .price {
+    color: #f26a1b;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.deal s {
+    font-size: 12px;
+    color: #9a6a58;
+}
+
+.deal progress {
+    width: calc(100% - 24px);
+    height: 6px;
+    overflow: hidden;
+    background: #fee7d6;
+    border-radius: 3px;
+}
+
+.deal progress::-webkit-progress-bar {
+    background: #fee7d6;
+}
+
+.deal progress::-webkit-progress-value {
+    background: #f26a1b;
+    border-radius: 3px;
+}
+
+.deal progress::-moz-progress-bar {
+    background: #f26a1b;
+    border-radius: 3px;
+}
+
+.deal .sold {
+    font-size: 11px;
+    font-weight: 600;
+    color: #9a6a58;
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    gap: 16px;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 64px 20px;
+}
+
+.benefits h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: clamp(26px, 3.6vw, 36px);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+}
+
+.benefit {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #fbd9cb;
+    border-radius: 16px;
+}
+
+.benefit .icon {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    background: #fee7d6;
+    color: #f26a1b;
+    font-weight: 800;
+    border-radius: 12px;
+}
+
+.benefit h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.benefit p {
+    font-size: 15px;
+    line-height: 1.55;
+    color: #7a4a3a;
 }
