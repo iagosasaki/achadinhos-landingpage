@@ -113,7 +113,8 @@ p {
 .header img {
     width: 44px;
     height: 44px;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .brand {
