@@ -720,7 +720,7 @@ p {
     line-height: 1.6;
     color: #9a6a58;
     text-align: center;
-    padding-bottom: 100px;
+    padding-bottom: calc(100px + env(safe-area-inset-bottom));
 }
 
 .sticky-cta {
@@ -733,7 +733,7 @@ p {
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    padding: 12px max(16px, calc((100% - 1120px) / 2 + 20px));
+    padding: 12px max(16px, calc((100% - 1120px) / 2 + 20px)) calc(12px + env(safe-area-inset-bottom));
     background: #fff;
     border-top: 1px solid #fbd9cb;
     box-shadow: 0 -6px 20px rgba(58, 26, 15, 0.08);
