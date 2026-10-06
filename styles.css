@@ -381,8 +381,7 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     width: calc(100% - 40px);
     max-width: 1080px;
-    margin: 0 auto -54px;
-    transform: translateY(-50%);
+    margin: -40px auto 0;
     position: relative;
     z-index: 1;
     overflow: hidden;
