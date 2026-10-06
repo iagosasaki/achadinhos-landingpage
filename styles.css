@@ -80,10 +80,6 @@ p {
     text-align: center;
 }
 
-.urgency-bar img {
-    display: none;
-}
-
 .urgency-bar p:first-of-type {
     background: #e5252a;
     color: #fff;
@@ -296,7 +292,7 @@ p {
 
 .chat-header p {
     font-size: 12px;
-    color: #9a6a58;
+    color: #7a4a3a;
 }
 
 .chat-card hr {
@@ -335,7 +331,7 @@ p {
 
 .chat-product s {
     font-size: 12px;
-    color: #9a6a58;
+    color: #7a4a3a;
 }
 
 .chat-product .shipping {
@@ -356,7 +352,7 @@ p {
 .chat-card time {
     align-self: flex-end;
     font-size: 11px;
-    color: #9a6a58;
+    color: #7a4a3a;
 }
 
 @media (max-width: 360px) {
@@ -518,7 +514,7 @@ p {
 
 .deal s {
     font-size: 12px;
-    color: #9a6a58;
+    color: #7a4a3a;
 }
 
 .deal progress {
@@ -546,7 +542,7 @@ p {
 .deal .sold {
     font-size: 11px;
     font-weight: 600;
-    color: #9a6a58;
+    color: #7a4a3a;
 }
 
 .benefits {
@@ -759,7 +755,7 @@ p {
     padding: 0 20px 32px;
     font-size: 12px;
     line-height: 1.6;
-    color: #9a6a58;
+    color: #7a4a3a;
     text-align: center;
     padding-bottom: calc(100px + env(safe-area-inset-bottom));
 }
@@ -783,7 +779,7 @@ p {
 .sticky-cta p {
     font-size: 12px;
     line-height: 1.25;
-    color: #9a6a58;
+    color: #7a4a3a;
 }
 
 .sticky-cta p:first-child {
