@@ -142,6 +142,27 @@ p {
     color: #fff;
 }
 
+@media (max-width: 380px) {
+    .header {
+        gap: 6px;
+        padding: 14px 14px;
+    }
+
+    .header img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .brand p {
+        font-size: 14px;
+    }
+
+    .header .btn {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+}
+
 .hero {
     position: relative;
     display: grid;
