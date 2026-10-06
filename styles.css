@@ -132,6 +132,7 @@ p {
     color: #f26a1b;
     font-size: 14px;
     font-weight: 700;
+    min-height: 44px;
     padding: 10px 16px;
     border-radius: 8px;
 }
@@ -200,6 +201,7 @@ p {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    min-height: 44px;
     padding: 10px 16px;
     border-radius: 8px;
     background: #fff;
